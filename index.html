@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Clause</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.jpeg">
+    <style>
+        body{
+            background-image:url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%,100%;
+            background-attachment: scroll;
+            object-fit: cover;
+            /* filter: blur(8px); */
+        }
+    </style>
+
+</head>
+
+<body>
+   <b><p id="heading">Contact Form With Captcha</p></b>
+    <div class="container">
+        <!-- <p id="heading">Contact Form With Capcha</p>
+        <div class="form-box">
+            <div class="secondheding">
+                <b>
+                    <p id="secondheading">Contact Us</p>
+                </b>
+            </div> -->
+            <div class="content">
+                <form action="" name="logform">
+                    
+                    <label id="name" for="fname"> Name: </label>
+                    <input height="10%" id="nameinput" type="text" name="" id="" placeholder="Your Name" required><br><br>
+                    <label id="fname" for="fname">Email: </label>
+                    <input id="inputbox" type="text" placeholder="Email" required><br><br>
+                    <label id="fname" for="fname">Mobile:</label>
+                    <input id="secondinput" type="text" name="" id="" placeholder="Mobile-No" required> <br> <br>
+                    <label id="fname" for="fname">Comment:</label>
+                    <input id="comment" type="text" name="" id="" placeholder="Comment" required>
+                    <br><br>
+                    <label id="fname" for="">Captcha Code:</label><br>
+                    <input style="font-size: 1.2vw;" id="captchacheck" type="text"  name="" required>
+                    <input  id="refreshbutton" type="button" value="Click" onclick="generateCaptcha()">
+                    
+
+                    <input style="font-size: 1.2vw;" id="captcha" type="text" readonly="readonly">
+                    <br>
+                  <button id="check" onclick="checkvalidCaptcha()">Submit</button>
+                   
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="aap.js"></script>
+</body>
+
+</html>

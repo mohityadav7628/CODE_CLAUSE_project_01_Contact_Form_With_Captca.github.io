@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    /* text-align: center; */
+    margin-left: 28vw;
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    font: bolder;
+    padding:30px;
+}
+.container{
+    width: 35%;
+    height: 30vw;
+    /* background-image: linear-gradient(aqua,rgb(41, 124, 220)); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.container #heading{
+    text-align: center;
+    font-size: 3vw;
+    font: bold;
+    color: #d0c3c3;
+    
+}
+.form-box{
+    background-color: white;
+    height: 37vw;
+    width:85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.secondheding{
+    background-color:rgb(191, 225, 222);
+    height: 3vw;
+    width:100%;
+}
+.secondheding #secondheading{
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 0.75vw;
+}
+.container .content{
+    background-color: rgba(0,0,0,0.7);
+    width: 90%;
+    height: 30vw;
+    /* background-color: transparent; */
+}
+.content #name{
+    font-size: 1.5vw;
+    margin-left: 4vw;
+    color: white;
+    /* background-color: transparent; */
+
+    
+}
+.content #nameinput{
+    width: 55%;
+    font-size: 1.2vw;
+    height: 2vw;
+    margin-top: 3vw;
+    margin-left:0vw;
+    border: 0;
+    border-bottom:  1px solid #5cdb95;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.content #fname{
+    font-size: 1.5vw;
+    margin-left: 4vw;
+    color: white;
+    /* background-color: transparent; */
+
+    
+}
+.content #inputbox{
+    width: 55%;
+    font-size: 1.1vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left:0vw;
+    border: 0;
+    border-bottom:  1px solid #5cdb95;
+    outline: none;
+    background: transparent;
+    color: white;
+    overflow: hidden;
+   
+}
+.content #secondinput{
+    width: 53%;
+    font-size: 1.1vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left:0vw;
+    border: 0;
+    border-bottom:  1px solid #5cdb95;
+    outline: none;
+    background: transparent;
+    color: white;
+    
+}
+.content #comment{
+    width: 48%;
+    font-size: 1.1vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left:0vw;
+    border: 0;
+    border-bottom:  1px solid #5cdb95;
+    outline: none;
+    background: transparent;
+    color: white;
+    
+}
+.content #captcha{
+    width: 23%;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left: 0vw;
+    border-radius: 5px;
+    /* background-color: #5cdb95; */
+    border-color: #3e3bb8;
+    background-color:  #00d7c3;
+
+    
+}
+.content #captchacheck{
+    font-size: 1vw;
+    width: 23%;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left:4vw;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #31d9dc, #11abb4, #5d5abd);
+    box-shadow: 0 4px 15px 0 rgba(190, 221, 197, 0.75);
+
+}
+.content #captchacheck:hover{
+    background-color: #00d7c3;
+}
+input[type=text]:focus {
+    outline: 2px solid #5cdb95;
+    border-radius: 8px;
+}
+.content #captcha:hover {
+    background-color:  #00d7c3;
+    
+}
+.content button{
+    cursor: pointer;
+    margin-top: 2vw;
+    width: 22.5%;
+    height: 3vw;
+    margin-left: 11.5vw;
+    font-size: 1.2vw;
+    color: black;
+}
+.content button #refreshimage{
+     width: 100%;
+    aspect-ratio: 5/2;
+    object-fit: contain;
+    border-color: #11abb4;
+    
+}
+
+.content button #refreshimage:hover{
+    background-color: #5cdb95;
+}
+.captcha{
+    display: flex;
+    
+}
+/* #check{
+    font-size: 1.3vw;
+    width: 7vw;
+    border-radius:10px;
+    margin-left: 12vw;
+    background-color: #5cdb95;
+
+}
+ .content #check:hover{
+    background-color:  #5cdb95;
+    
+} */
+#check {
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  
+  #check{
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+  }
+.content #refreshbutton{
+    width: 6vw;
+    height: 2vw;
+    border-radius: 5px;
+  border-color: #31d9dc;
+    font-size: 1vw;
+}
+.content #refreshbutton:hover{
+
+    background-color: #00d7c3;
+    
+}
+
+
+/* Responsive ness of form page */
+@media only screen and (min-width:900px) and (max-width:1360px)
+{
+    body{
+        background-image:url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%,100%;
+        background-attachment: scroll;
+        object-fit: cover;
+        
+    }
+
+    .container .content{
+        height: 38vw;
+        width: 110%;
+    }
+    .content #name{
+        font-size: 2.2vw;
+    }
+    .content #fname{
+        font-size: 2.2vw;
+        /* margin-bottom: 3vw; */
+    }
+    .content #nameinput{
+        font-size: 1.5vw;
+    }
+    .content #inputbox{
+        font-size: 1.5vw;
+    }
+    .content #secondinput{
+        font-size: 1.5vw;
+    }
+    .content #comment{
+        font-size: 1.5vw;
+    }
+    .content #captchacheck{
+        width: 22%;
+        height: 2.5vw;
+        margin-top: 3vw;
+        margin-left: 5vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .content #refreshbutton{
+        width: 20%;
+        height: 2.6vw;
+        font-size: 1.5vw;
+    }
+    .content #captcha{
+        width: 22%;
+        height:2.5vw;
+        /* margin-left: 6vw; */
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    #check{
+        width: 22%;
+        height: 2.8vw;
+        margin-left: 14vw;
+        font-size: 2vw;
+    }
+    #heading{
+        margin-left: 20vw;
+        margin-top:6vw;
+        font-size: 4.5vw;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:900px)
+{
+    body{
+        background-image:url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: 150%,100%;
+        background-attachment: scroll;
+        object-fit: cover;
+        
+    }
+
+    .container .content{
+        height:46vw;
+        width: 129%;
+    }
+    .content #name{
+        font-size: 2.2vw;
+    }
+    .content #fname{
+        font-size: 2.2vw;
+        /* margin-bottom: 3vw; */
+    }
+    .content #nameinput{
+        font-size: 2vw;
+    }
+    .content #inputbox{
+        font-size: 2vw;
+    }
+    .content #secondinput{
+        font-size: 2vw;
+    }
+    .content #comment{
+        font-size: 2vw;
+    }
+    .content #captchacheck{
+        width: 22%;
+        height: 3vw;
+        margin-top: 3vw;
+        margin-left: 5vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .content #refreshbutton{
+        width: 20%;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+    .content #captcha{
+        width: 22%;
+        height: 3vw;
+        /* margin-left: 6vw; */
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    #check{
+        width: 22%;
+        height: 3.6vw;
+        margin-left: 15.5vw;
+        font-size: 2vw;
+    }
+    #heading{
+        margin-left: 20vw;
+        margin-top: 8vw;
+        font-size: 5vw;
+    }
+    
+}
+@media only screen and (min-width:500px) and (max-width:700px)
+{
+    body{
+        background-image:url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%,100%;
+        background-attachment: scroll;
+        object-fit: cover;
+        
+    }
+
+    .container .content{
+        height:56vw;
+        width: 150%;
+    }
+    .content #name{
+        font-size: 3.2vw;
+    }
+    .content #fname{
+        font-size: 3.2vw;
+        /* margin-bottom: 3vw; */
+    }
+    .content #nameinput{
+        font-size: 2.8vw;
+    }
+    .content #inputbox{
+        font-size: 2.8vw;
+    }
+    .content #secondinput{
+        font-size: 2.8vw;
+    }
+    .content #comment{
+        font-size: 2.8vw;
+    }
+    .content #captchacheck{
+        width: 22%;
+        height: 3.5vw;
+        margin-top: 3vw;
+        margin-left: 7vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .content #refreshbutton{
+        width: 20%;
+        height: 3.5vw;
+        font-size: 2vw;
+    }
+    .content #captcha{
+        width: 20%;
+        height: 3.5vw;
+        /* margin-left: 6vw; */
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    #check{
+        width: 26%;
+        height: 3.6vw;
+        margin-top: 4vw;
+        margin-left: 17.5vw;
+        font-size: 2vw;
+    }
+    #heading{
+        margin-left:23vw;
+        margin-top: 20vw;
+        font-size: 5vw;
+    }
+    
+}
+
+
+@media only screen and (min-width:300px) and (max-width:500px)
+{
+    body{
+        background-image:url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: 350%,100%;
+        background-attachment: scroll;
+        object-fit: cover;
+        
+    }
+    .container{
+        height: 107vw;
+        margin-left: -18vw;
+    }
+
+    .container .content{
+        height:80vw;
+        width: 213%;
+        /* margin-left: 6vw; */
+    }
+    .content #name{
+        font-size: 4.2vw;
+    }
+    .content #fname{
+        font-size: 4.2vw;
+        /* margin-bottom: 3vw; */
+    }
+    .content #nameinput{
+        font-size: 3.8vw;
+    }
+    .content #inputbox{
+        font-size: 3.8vw;
+    }
+    .content #secondinput{
+        font-size: 3.8vw;
+    }
+    .content #comment{
+        font-size: 3.8vw;
+    }
+    .content #captchacheck{
+        width: 22%;
+        height: 4.5vw;
+        margin-top: 3vw;
+        margin-left: 7vw;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .content #refreshbutton{
+        width: 23%;
+        height: 4.5vw;
+        font-size: 2vw;
+    }
+    .content #captcha{
+        width: 22%;
+        height: 4.5vw;
+        /* margin-left: 6vw; */
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    #check{
+        width: 26%;
+        height: 6.6vw;
+        margin-top: 4vw;
+        margin-left: 23.5vw;
+        font-size: 3vw;
+    }
+    #heading{
+        margin-left:3.3vw;
+        margin-top: 16vw;
+        font-size: 6vw;
+    }
+    
+}
